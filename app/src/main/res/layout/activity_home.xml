@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:weightSum="21"
+    android:background="@color/bleu">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:gravity="top"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/Menu_Button"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:background="@drawable/round_button"
+                app:srcCompat="@drawable/ic_baseline_menu_24"
+                android:contentDescription="@string/todo" />
+
+            <ImageButton
+                android:id="@+id/Help_Button"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="270dp"
+                android:background="@drawable/round_button"
+                app:srcCompat="@drawable/ic_baseline_help_24"
+                android:contentDescription="@string/todo" />
+
+
+
+        </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="159dp"
+        android:layout_height="144dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_weight="5"
+        android:contentDescription="@string/icon"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/PlayButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="@string/play_now" />
+
+    <TextView
+        android:id="@+id/SubHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="@string/tap_at_play_now_to_start_a_new_game_or_choose_from_the_menu_the_appropriate_level_for_you"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
